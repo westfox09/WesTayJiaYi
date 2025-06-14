@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import StockForm from './StockForm';
 import StockList from './StockList';
 import ResetButton from './ResetButton';
+import Logo from '/images/Logo.png';
 
 // Main App Component - Manages the state of stocks and renders StockForm and StockList components
 function App()
@@ -56,9 +57,7 @@ function App()
   return (
     <>
       <div className="finance-dashboard">
-        <h1>
-          <img src="/images/findashlogo.png" alt="Finance Dashboard" className="dashboard-image" />
-        </h1>
+        <img src={Logo} alt="Finance Dashboard" className="dashboard-image" />
         <StockForm onAddStock={addStock} />
         <StockList stocks={stocks} />
       </div>
