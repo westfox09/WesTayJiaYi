@@ -47,7 +47,7 @@ function StockForm({ onAddStock })
     const purchasePrice = Number(document.getElementById("stock-price").value); // Purchase price input
 
      // Validate inputs before adding stock
-    if (!symbol || isNaN(quantity) || isNaN(purchasePrice) || price === null) // Check if symbol, quantity, or price is invalid
+    if (!symbol || isNaN(quantity) || isNaN(purchasePrice) || price === null || quantity <= 0 || purchasePrice <= 0) // Check if symbol, quantity, or price is invalid
     {
         setError("Stock price unavailable. Not able to add!"); // Set error message
         return;
