@@ -57,7 +57,7 @@ function App()
     <>
       <div className="finance-dashboard">
         <h1>
-          <img src="./src/fin_dash_logo.png" alt="Finance Dashboard" className="dashboard-image" />
+          <img src="./images/fin_dash_logo.png" alt="Finance Dashboard" className="dashboard-image" />
         </h1>
         <StockForm onAddStock={addStock} />
         <StockList stocks={stocks} />
