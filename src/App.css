@@ -1,14 +1,14 @@
 /* Directing to the Borsok font file */
 @font-face {
   font-family: 'Borsok';
-  src: url('./images/Borsok-Regular.ttf') format('truetype');
+  src: url('/images/Borsok-Regular.ttf') format('truetype');
 }
 
 /* General Styles */
 body {
   font-family: 'Borsok', sans-serif;
   font-weight: 100; /* Thinner for readability */
-  background: url('./images/Background.png') no-repeat center center fixed;
+  background: url('/images/Background.png') no-repeat center center fixed;
   background-size: cover; /* Ensures it covers the full screen */
   color: #00FFFF; /* Flowing cyan for text */
   margin: 0;
